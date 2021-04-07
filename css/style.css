@@ -14,7 +14,7 @@ h1{
     text-align: center;
     color: floralwhite;
 }
-.box{
+#box{
     display: flex;
     justify-content: center;
     align-items: center;
