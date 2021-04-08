@@ -37,7 +37,14 @@ function carousel() {
             }
 
          }
-      }
+      },
+      mounted: function() {
+
+         setInterval(() =>{
+
+            this.nextImg();               
+         }, 3000);
+      },
 
    });
 }

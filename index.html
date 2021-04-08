@@ -21,8 +21,8 @@
 
      <a @click = "prevImg" class="skip-prev" href="#"><i class="fas fa-arrow-circle-left"></i></a>
      <div class="container">
-         
-         <img v-for = "(image, i) in images" :key = 'i' v-if = "i == visible" :src = "image" alt="foto bici">
+
+         <img :src = "images[visible]" alt="foto bici">
          
          
      </div>
