@@ -23,28 +23,18 @@ function carousel() {
 
          prevImg: function () {
 
-            let count = this.visible;
-            let limitCount = (this.images.length - 1);
-
-            if (count == limitCount) {
-               count = 0;
-            } else {
-               count--;
-            }
-
+           this.visible--;
+         if(this.visible < 0 ){
+            this.visible = this.images.length -1
+         }
 
          },
 
          nextImg: function () {
-            let count = this.visible;
-            let limitCount = (this.images.length - 1);
-
-            if (count == limitCount) {
-               count = 0;
-            } else {
-               count++;
+            this.visible ++
+            if(this.visible >= this.images.length){
+               this.visible = 0
             }
-
 
          }
       }
